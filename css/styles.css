@@ -170,12 +170,6 @@ span a {
 }
 
 
-
-
-
-
-
-
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -190,10 +184,9 @@ span a {
 }
 
 .contenedor{
-  margin:0;
+  margin: 10px;
   display: flex;
   justify-content: space-around;
-  
   
 }
 
@@ -209,7 +202,7 @@ span a {
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
   transition: all .3s ease-in-out ;
-display: block;
+  display: block;
 }
 
 .contenedor a:hover{
@@ -219,10 +212,63 @@ display: block;
 @media(max-width:767px){
   .contenedor a {
     display: block;
-    margin: 10px 0;
+   
   }
 }
 
+/* Header de banner*/
+.home{
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 20px 10% 0;
+}
+
+
+.home-contenti{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-contenti h1{
+  font-size: 56px;
+  font-weight: 700;
+}
+.home-contenti h2{
+  font-size: 32px;
+  font-weight: 700;
+  margin: -3px 0;
+
+}
+.home-contenti p{
+  font-size: 20px;
+  
+}
+
+.logo {
+  max-width: 70px; /* Ajusta el tamaño máximo de tu logo según tus necesidades */
+}
+
+.logo img {
+  width: 80%;
+  height: auto;
+}
+.text-content {
+  flex: 1;
+}
+
+.paragraph {
+  display: flex;
+  flex-direction: column;
+}
+.max-200x200 {
+  max-width: 300px;
+  max-height: 300px;
+}
 
 body {
   margin: 0;
@@ -235,7 +281,92 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  height: 100vh;
+  align-items: center;
 }
+
+.container-carousel {
+  position: relative;
+  max-width: 1000px;
+  width: 1000px;
+  height: auto;
+  background-color: #e0e0e0;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.66);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.carruseles {
+  width: 400%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider-section {
+  width: calc(100% / 4);
+  height: auto;
+  
+}
+
+.slider-section img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  flex-shrink: 0;
+}
+
+.btn-left,
+.btn-right {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff81;
+  transform: translate(0,-50%);
+  transition: .5s ease;
+  user-select: none;
+}
+
+.btn-left:hover,
+.btn-right:hover {
+  background-color: #333333d4;
+  color: #fff;
+}
+
+.btn-left {
+  left: 10px;
+}
+
+.btn-right {
+  right: 10px;
+}
+@media (max-width: 768px) {
+  .container-carousel {
+    max-width: 90%; /* Puedes ajustar el ancho máximo según tus necesidades */
+  }
+
+  .slider-section {
+    width: 100%; /* Asegúrate de que cada sección ocupe el 100% en pantallas pequeñas */
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 hr {
   margin: 1rem 0;
@@ -10969,9 +11100,14 @@ body {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
+  
 }
 
+
+.page-sectiones {
+  padding: 6rem 0;
+} 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
@@ -11064,16 +11200,17 @@ header.masthead {
   padding-bottom: calc(9rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/imagenbanner.jpg");
   background-position: center center;
-  
   background-attachment: scroll;
   background-size: cover;
   background-repeat: no-repeat;
+  min-width: 100%;
+
 }
 
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 300px) {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
@@ -11092,6 +11229,7 @@ header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
 }
+
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
   max-width: 1920px;
