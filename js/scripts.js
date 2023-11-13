@@ -101,4 +101,24 @@ function moveToLeft() {
     
 }    
 
+
+function closeOverlay() {
+    document.querySelector('.overlay').style.display = 'none';
+}
+
+var closeButtons = document.querySelectorAll('.close-btn');
+
+        // Agrega un evento de clic a cada botón de cierre
+        closeButtons.forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Obtén el ID del modal a cerrar
+                var modalId = button.parentElement.parentElement.id;
+                closeModal(modalId);
+            });
+        });
+
+        function closeModal(modalId) {
+            location.hash = '';
+        }
+
 });

@@ -102,7 +102,7 @@
             <div class="skill-card">
                 <img src="assets/skills/3d.png" alt="Skill 3">
                 <div class="skill-name">ARTE 3D</div>
-                <div class="skill-description">Desarrollo de personajes, escenarios, animaciones, rigging y animaciones para videojuegos.</div>
+                <div class="skill-description">Desarrollo de personajes, escenarios, animaciones y rigging para videojuegos.</div>
             </div>
 
             <!-- Skill 4 -->
@@ -122,93 +122,31 @@
     </section>
 
 <!-- Parte galleria-->
-    <section class="portfolio-section">
-        <h2>Mi Portafolio</h2>
+  <section class="portfolio-section">
+       <h2>Porfolio</h2>
         <div class="gallery">
-            <!-- Imagen 1 -->
             <div class="gallery-item">
-                <img src="ruta-imagen-1.jpg" alt="Proyecto 1">
+                <a href="#img1">
+                    <img src="assets/porfolioAlicia/Flora.png" alt="Proyecto 1">
+                </a>
+                <div class="modal" id="img1">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <a href="#" class="close-btn" onclick="closeModal('img1');">&times;</a>
+                        <img src="assets/porfolioAlicia/Flora.png" alt="Proyecto 1" class="modal-image">
+                    </div>
+                </div>
             </div>
-            <!-- Imagen 2 -->
             <div class="gallery-item">
-                <img src="ruta-imagen-2.jpg" alt="Proyecto 2">
-            </div>
-            <!-- Imagen 3 -->
-            <div class="gallery-item">
-                <img src="ruta-imagen-3.jpg" alt="Proyecto 3">
-            </div>
-            <!-- Repite según sea necesario -->
-        </div>
-        <div class="overlay">
-            <!-- Contenido de la imagen expandida -->
-            <div class="overlay-content">
-                <span class="close-btn">&times;</span>
-                <img id="expanded-img" alt="Imagen expandida">
-            </div>
-        </div>
-    </section>
-
-
-
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="img/aboutMe.png" alt="" class="aboutHero">
-            
-        </div>
-        <div class="about-content">
-            <h2 class="heading">Sobre mi</h2>
-            <h3>Estudiante del grado Diseño y Desarrollo de Videojuegos</h3>
-            <p></p>
-            <div class="about-btn">
-                <button class="active">Main Skills</button>
-                <button>Awards</button>
-                <button>Education</button>
-            </div>
-            <div class="content-btn">
-                <div class="content">
-                    <div class="text-box">
-                    <p>User Experience Design - UI / UX</p>
-                    <span>Delight the user and make it work.</span>
-                </div>
-                <div class="text-box">
-                    <p>Web & User Interface Design - Development</p>
-                    <span>Website , Web Experience , ...</span>
-                </div>
-                <div class="text-box">
-                    <p>Interaction Desing - Animation</p>
-                    <span>I Like to move it move it</span>
-                </div>
-                </div>
-
-                <div class="content">
-                    <div class="text-box">
-                    <p>Web Design Award</p>
-                    <span>Award for creativity and user experience.</span>
-                </div>
-                <div class="text-box">
-                    <p>Code and Development Award</p>
-                    <span>Exceptional coding skills and develoment techniques</span>
-                </div>
-                <div class="text-box">
-                    <p>Hackathons and coding Competiotions</p>
-                    <span>Participating in hackathons and coding.</span>
-                </div>
-                </div>
-
-
-                <div class="content">
-                    <div class="text-box">
-                    <p>Online Courses and Bootcamps</p>
-                    <span>Delight the user and make it work.</span>
-                </div>
-                <div class="text-box">
-                    <p>Internships and Work Experience</p>
-                    <span>Website , Web Experience , ...</span>
-                </div>
-                <div class="text-box">
-                    <p>Bachelor's Degree in Computer Science</p>
-                    <span>I Like to move it move it</span>
-                </div>
+                <a href="#img2">
+                    <img src="assets/porfolioAlicia/tigre.png" alt="Proyecto 2">
+                </a>
+                <div class="modal" id="img2">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <a href="#" class="close-btn" onclick="closeModal('img2');">&times;</a>
+                        <img src="assets/porfolioAlicia/tigre.png" alt="Proyecto 2" class="modal-image">
+                    </div>
                 </div>
             </div>
         </div>
@@ -219,11 +157,7 @@
         <p>Copyright © 2023 by <span>Pars Coder</span> || All Right Reservd.</p>
     </footer>
 
-    <div id="progress">
-        <span id="progress-value">
-            <i class='bx bxs-chevrons-up' ></i>
-        </span>
-    </div>
+    
 
     <!-- scroll reveal  -->
     <script src="https://unpkg.com/scrollreveal"></script>
