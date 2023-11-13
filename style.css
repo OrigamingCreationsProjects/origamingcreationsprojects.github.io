@@ -31,6 +31,7 @@ body{
 }
 
 
+
 /* ==================== home section css code ============================ */
 section{
     padding: 90px 10%;
@@ -280,103 +281,53 @@ section{
     font-size: 1.2rem;
 }
 
+/* ==================== skills section css code ============================ */
 
+.skills-section {
+    background-color: #180d20; /* Morado oscuro */
+    color: #fff; /* Texto en blanco */
+    padding: 50px 10%;
+    text-align: center;
+}
 
-/* ==================== About section css code ============================ */
-.about{
+.skills-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.about .about-img{
-    position: relative;
+.skill-card {
+    width: 220px;
+    margin: 20px;
+    background-color: #511474; /* Morado más oscuro */
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.about .about-img .aboutHero{
-    width: 40vw;
-    height: auto;
+.skill-card img {
+    width: 100%;
+    border-radius: 50%;
 }
 
-.about-img .ring{
-    position: absolute;
-    top: 22%;
-    right: 1%;
+.skill-name {
+    margin-top: 10px;
+    font-size: 1.5rem;
 }
 
-.about-img .circle{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-
-.about-content{
-    padding: 3rem 0;
-}
-
-.about-content h2{
-    color: var(--main-color);
-}
-
-.about-content h3{
-    font-size: 2.1rem;
-    line-height: 3rem;
-    margin: .5rem 0;
-}
-
-.about-content p{
-    color: var(--font-color);
-}
-
-.text-box p{
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.about-btn{
-    margin: .8rem 0;
-}
-
-.about-btn button,.cvContent a{
-    background: var(--gradient-white-bg2);
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: none;
+.skill-description {
+    margin-top: 10px;
     font-size: 1rem;
-    font-weight: 500;
-    color: #000;
-    box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0,
-                  rgba(60,64,67,0.15)0px 2px 6px 2px;
-    margin-right: .5rem;
-    cursor: pointer;
-    transition: all .3s ease;
 }
 
-
-.about-btn button.active{
-    background: var(--gradient-color-bg);
-    color: #ffff;
+@media screen and (max-width: 768px) {
+    .skill-card {
+        width: 100%;
+    }
 }
+/* ==================== skills section css code ============================ */
 
-.text-box{
-    margin: .8rem 0;
-}
 
-.content-btn > .content:not(:first-child){
-    display: none;
-}
-
-.about-btn button:hover{
-    box-shadow: var(--hover-box-shadow);
-}
-
-.cvContent{
-    margin-top: 1.5rem;
-}
-
-/* ==================== Services section css code ============================ */
+/* ==================== Services section css code ============================ 
 .services{
     position: relative;
 }
