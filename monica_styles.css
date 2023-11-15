@@ -9,14 +9,14 @@
 }
 
 :root{
-    --bg-color-start: #dda6a6; 
-    --bg-color-end: #a55454;   
+    --bg-color-start: #a6b3dd; 
+    --bg-color-end: #5460a5;   
     --gradient-white-bg:linear-gradient(0deg,#fff 0%,#edf4fa 51%,#e5eef7 100%);
-    --gradient-color-bg:linear-gradient(180deg,rgb(102, 45, 45)0%,
-                                                rgb(70, 22, 22)51%,
-                                                rgb(121, 27, 27)100%);
-    --main-color:#5c0f0f;
-    --font-color:#9f9090;
+    --gradient-color-bg:linear-gradient(180deg,rgb(45, 58, 102)0%,
+                                                rgb(22, 31, 70)51%,
+                                                rgb(27, 36, 121)100%);
+    --main-color:#0f1d5c;
+    --font-color:#90929f;
     --hover-box-shadow:rgba(0, 0, 0, 0.19)0px 10px 20px,
                        rgba(0, 0, 0, 0.23)0px 6px 6px;     
     --gradient-white-bg2:linear-gradient(98deg,#f7e5e5 0%,#fff 100%);                                         
@@ -75,7 +75,7 @@ section{
     font-weight: 700;
     margin-bottom: 1rem;
     color: transparent;
-    -webkit-text-stroke: 0.05w #462121;
+    -webkit-text-stroke: 0.05w #212846;
     background: var(--gradient-color-bg);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -103,7 +103,7 @@ section{
 
 .hero-info p{
     font-size: 1.9rem;
-    color: #ffb9b9;
+    color: #b9cfff;
     line-height: 1.6rem;
 }
 
@@ -138,7 +138,7 @@ section{
     height: 42px;
     font-size: 1.5rem;
     color: var(--main-color);
-    background: #f7cece;
+    background: #cedbf7;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -150,7 +150,7 @@ section{
 
 .social-media a:hover{
     background: var(--gradient-color-bg);
-    color: #fff;
+    color: #ffffff;
 }
 
 .bg-icon{
@@ -226,8 +226,8 @@ section{
     position: relative;
     width: 442px;
     height: 442px;
-    background: rgb(49, 15, 15);
-    border: 6px solid #b15858;
+    background: rgb(15, 24, 49);
+    border: 6px solid #5865b1;
     border-radius: 50%;
     z-index: 1;
     overflow: hidden;
@@ -237,7 +237,7 @@ section{
     content: "";
     position: absolute;
     inset: 20px;
-    background: #b15858;
+    background: #5877b1;
     border-radius: 50%;
     z-index: 1;
 }
@@ -255,7 +255,7 @@ section{
     position: absolute;
     width: 490px;
     height: 490px;
-    background: #fbf2f2;
+    background: #f2f5fb;
     border-radius: 50%;
     box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0.2);
     animation: rotateText 30s linear infinite;
@@ -273,7 +273,7 @@ section{
 /* ==================== skills section css code ============================ */
 
 .skills-section {
-    background-color: #200d0d; /* Morado oscuro */
+    background-color: #0d0f20; /* Morado oscuro */
     color: #fff; /* Texto en blanco */
     padding: 50px 10%;
     text-align: center;
@@ -288,7 +288,7 @@ section{
 .skill-card {
     width: 220px;
     margin: 20px;
-    background-color: #741414; /* Morado más oscuro */
+    background-color: #142274; /* Morado más oscuro */
     padding: 20px;
     border-radius: 10px;
 }
@@ -318,7 +318,7 @@ section{
     padding: 50px 10%;
     text-align: center;
     margin-top: 30px;
-    background-color:  #dda6a6; /* Ajusta el valor alpha según sea necesario */
+    background-color:  #a6b3dd; /* Ajusta el valor alpha según sea necesario */
     border-radius: 8px; /* Añade esquinas redondeadas según sea necesario */
 }
 
@@ -410,14 +410,14 @@ section{
     top: 10px;
     right: 10px;
     font-size: 30px;
-    color: rgb(31, 27, 27);
+    color: rgb(27, 28, 31);
     text-decoration: none;
     cursor: pointer;
     z-index: 2;
 }
 
 .close-btn:hover {
-    color: rgb(255, 0, 0);
+    color: rgb(17, 0, 255);
 }
 
 /* ... (tu CSS existente) ... */
