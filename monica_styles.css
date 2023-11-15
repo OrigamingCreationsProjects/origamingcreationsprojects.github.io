@@ -181,7 +181,7 @@ section{
 .img-fluid {
     max-width: 100%;
     height: auto;
-    max-height: 300px; /* Ajusta el tamaño vertical según sea necesario */
+    max-height: 350px; /* Ajusta el tamaño vertical según sea necesario */
     border-radius: 50%; /* Hace la imagen redonda */
 }
 
