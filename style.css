@@ -578,9 +578,8 @@ footer{
 
 
 
-
 /*======================= BrakPoints ============================ */
-
+/*
 @media(max-width:1200px){
     html{
         font-size: 95%;
@@ -668,7 +667,7 @@ footer{
         font-size: .8rem;
     }
 }
-
+*/
 @media(max-width:530px){
     html{
         font-size: 80%;
