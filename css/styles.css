@@ -210,7 +210,7 @@ span a {
 }
 
 
-/* Header de banner*/
+/*********************************** Header de banner*********************/
 .home{
   position: relative;
   width: 100%;
@@ -218,7 +218,7 @@ span a {
   height: 80vh;
   display: flex;
   align-items: center;
-  padding: 20px 10% 0%;
+  padding: 35px 10% 0%;
 }
 
 
@@ -228,6 +228,7 @@ span a {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 30px;
+  margin: 20px 0;
 }
 
 .home-content h1{
@@ -356,7 +357,7 @@ body {
   }
 }
 
-/* lanzamiento seccion*/
+/********************* lanzamiento seccion************************/
 .lanzamiento-section {
   background-color: #ae8abe;
   padding: 40px 0.5%;
@@ -365,7 +366,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
 }
 
 .lanzamiento-image {
@@ -391,12 +392,13 @@ body {
 }
 
 .lanzamiento-button:hover {
-  background-color: #ff44b3;
+  background-color: #e99fff;
 }
 
 @media only screen and (max-width: 600px) {
   .lanzamiento-section {
       padding: 30px 5%;
+      height: 100vh;
   }
 
   .lanzamiento-image {
@@ -404,16 +406,26 @@ body {
   }
 }
 
+/************* Boton de la sección de integrantes ***************/
+.boton{
+  background-color: #ee983c;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno al hacer clic */
+}
+
+.boton:hover {
+  background-color: #f4623a;
+  transform: scale(1.2);
+}
+
 /*****************************************************/
-
-
-
-
-
-
-
-
-
 
 hr {
   margin: 1rem 0;
