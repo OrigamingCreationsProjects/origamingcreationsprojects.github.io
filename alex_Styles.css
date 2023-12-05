@@ -484,7 +484,82 @@ footer{
     font-size: 25px;
 }
 
-
+/********************Sección de contacto********************/
+.contact-section {
+    padding: 50px 10%;
+    background-color: rgb(102, 45, 45); /* Cambia este color al que desees */
+  }
+  .contact-form {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .contact-form label {
+    color: white; /* Cambia el color del texto de las etiquetas a blanco */
+  }
+  .contact-form button {
+    background-color: #3498db; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Quita el borde */
+    padding: 10px 20px; /* Ajusta el espaciado interno del botón según sea necesario */
+    border-radius: 5px; /* Redondea los bordes del botón */
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+      width: 100%;
+      color: #fff8f8;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ddd; /* Añade un borde gris */
+      border-radius: 5px; /* Redondea los bordes de los recuadros de entrada */
+      box-sizing: border-box;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    color: #fff0f0;
+  }
+  
+  .contact-form form {
+    display: grid;
+    gap: 16px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    background-color: #ac1e1e;;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color:rgb(129, 25, 25)
+  }
+  
+  @media screen and (max-width: 767px) {
+    .contact-form {
+        padding: 0 10px;
+    }
+  }
 
 
 
