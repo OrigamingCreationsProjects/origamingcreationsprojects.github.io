@@ -7,6 +7,19 @@
 // Scripts
 // 
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Tu script aquí
+    window.addEventListener('scroll', function () {
+        var navbar = document.querySelector('.navbar');
+        var scrollPosition = window.scrollY;
+
+        if (scrollPosition > 50) {
+            navbar.classList.add('scroll');
+        } else {
+            navbar.classList.remove('scroll');
+        }
+    });
+});
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -122,3 +135,4 @@ var closeButtons = document.querySelectorAll('.close-btn');
         }
 
 });
+
