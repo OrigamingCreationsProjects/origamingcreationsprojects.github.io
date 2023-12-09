@@ -31,18 +31,26 @@ body{
    
 }
 /********************************Sección de banner***************************/
-.home-content img {
-    max-width: 400px; 
-    width: auto;
+.imageSection {
+    height: 700px;
+}
+
+.image-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-responsive {
+    max-width: 70%;
     height: auto;
-    margin-bottom: 20px; 
-
 }
-
-.home-content p {
-    margin-top: 20px; /* Ajusta la cantidad de espacio entre la imagen y el texto */
+@media only screen and (min-width: 769px) {
+    .img-responsive {
+        max-width: 40%; 
+    }
 }
-
 /********************************Sección de jugar el juego***************************/
 .Lullaby-section {
     display: flex;
@@ -50,7 +58,7 @@ body{
     justify-content: space-around;
     padding: 50px 10%;
     color: #ffffff;
-    background-color: rgb(121, 35, 92); /* Cambia el color de fondo según tus preferencias */
+    background-color: rgb(90, 35, 121); 
     text-align: center;
 }
   
@@ -70,8 +78,9 @@ body{
   }
   
   .Lullaby-image {
-    max-width: 70px;;
+    max-width: 70%; 
     border-radius: 8px;
+    margin-left: 100px;
     width: auto;
     height: auto;/
   
@@ -82,15 +91,22 @@ body{
       flex-direction: column;
       text-align: center;
     }
-  
+ 
     .Lullaby-content {
-      margin-top: 0px;
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+    
+    .Lullaby-image {
+        max-width: 220px;
+        margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
     }
   }
 
   @media only screen and (min-width: 769px) {
     .Lullaby-image {
-      max-width: 20%; /* Ajusta el porcentaje según tus preferencias */
+      max-width: 20%; 
     }
   }
   .game-link-button {
@@ -98,13 +114,13 @@ body{
     padding: 10px 20px;
     font-size: 1em;
     text-decoration: none;
-    background-color: #3498db;
+    background-color: #8234db;
     color: #fff;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .game-link-button:hover {
-    background-color: #2980b9;
+    background-color: #6729b9;
 }
   

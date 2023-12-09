@@ -317,7 +317,7 @@ section{
 
   @media only screen and (min-width: 769px) {
     .about-image {
-      max-width: 30%; /* Ajusta el porcentaje según tus preferencias */
+      max-width: 30%; 
     }
   }
 
