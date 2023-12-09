@@ -280,7 +280,58 @@ section{
     left: 50%;
     font-size: 1.2rem;
 }
+/************************* Sobre mi section *************************/
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 10%;
+    color: #ffffff;
+    background-color: rgb(90, 35, 121); /* Cambia el color de fondo según tus preferencias */
+    text-align: center;
+}
+  
+  .about-content {
+    max-width: 600px;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Agregamos un margen inferior */
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    max-width: 70%;
+    border-radius: 8px;
+    width: auto;
+    height: auto;/
+  
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-content {
+      margin-top: 20px;
+    }
+  }
 
+  @media only screen and (min-width: 769px) {
+    .about-image {
+      max-width: 27%; /* Ajusta el porcentaje según tus preferencias */
+    }
+  }
+
+  
 /* ==================== skills section css code ============================ */
 
 .skills-section {
