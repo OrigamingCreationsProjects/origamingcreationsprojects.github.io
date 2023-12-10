@@ -359,7 +359,10 @@ body {
 
 /********************* lanzamiento seccion************************/
 .lanzamiento-section {
-  background-color: #ae8abe;
+  position: relative;
+  background-image: url('Banner.jpeg'); 
+  background-size: cover;
+  background-repeat: repeat;
   padding: 40px 0.5%;
   text-align: center;
   display: flex;
@@ -367,6 +370,20 @@ body {
   align-items: center;
   justify-content: center;
   height: 70vh;
+}
+.lanzamiento-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.lanzamiento-content-container {
+  position: relative;
+  z-index: 2;
 }
 
 .lanzamiento-image {
@@ -376,7 +393,9 @@ body {
 }
 
 .lanzamiento-title {
+  color: white;
   margin-top: 20px;
+  margin-bottom: 30px;
   font-size: 24px;
 }
 

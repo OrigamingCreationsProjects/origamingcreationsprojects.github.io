@@ -121,18 +121,16 @@ function closeOverlay() {
 
 var closeButtons = document.querySelectorAll('.close-btn');
 
-        // Agrega un evento de clic a cada botón de cierre
-        closeButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                // Obtén el ID del modal a cerrar
-                var modalId = button.parentElement.parentElement.id;
-                closeModal(modalId);
-            });
-        });
-
-        function closeModal(modalId) {
-            location.hash = '';
-        }
-
+closeButtons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
+        var modalId = button.parentElement.parentElement.id;
+        closeModal(modalId);
+    });
+});
+       
 });
 
+function closeModal(modalId) {
+    location.hash = '';
+}

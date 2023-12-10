@@ -34,10 +34,13 @@ body{
 
 /* ==================== home section css code ============================ */
 section{
-    padding: 90px 10%;
+    padding: 100px 10%;
+}
+.home {
+    height: 100vh;
 }
 .home-content {
-    padding: 60px 8%; /* Ajusta los valores superior e inferior según sea necesario */
+    padding: 20px; /* Ajusta el espaciado según sea necesario */
 }
 
 .homeSite{
@@ -141,7 +144,7 @@ section{
 }
 
 .social-media .bg-icon {
-    margin: 0 5px; /* Ajusta el espacio entre los íconos de redes sociales */
+    margin: 0 10px; /* Ajusta el espacio entre los íconos de redes sociales */
 }
 
 .social-media a{
@@ -195,7 +198,10 @@ section{
     max-height: 350px; /* Ajusta el tamaño vertical según sea necesario */
     border-radius: 50%; /* Hace la imagen redonda */
 }
-
+.col-lg-6 {
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
 /* Ajusta el tamaño del contenedor y el espaciado alrededor de la imagexn */
 .col-lg-6.text-right,
 .col-lg-6.align-self-center.text-left {
@@ -213,7 +219,11 @@ section{
     display: block;
     margin: 0 auto;
 }
-
+.img-hero {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
 .img-hero img{
     position: relative;
     max-width: 100px;
@@ -280,6 +290,33 @@ section{
     left: 50%;
     font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 767px) {
+    .home-content {
+        padding: 20px 0%; /* Ajusta el espaciado según sea necesario */
+    }
+
+    .col-lg-6 {
+        margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+        margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+    }
+
+    .social-media {
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en dispositivos móviles */
+        justify-content: center; /* Centrar los elementos en dispositivos móviles */
+    }
+
+    .social-media .bg-icon {
+        margin: 10px; /* Ajusta el espacio entre los íconos de redes sociales según sea necesario */
+    }
+}
+
+/* Agrega ajustes para dispositivos más grandes si es necesario */
+@media only screen and (min-width: 768px) {
+    /* Ajustes adicionales para dispositivos más grandes si es necesario */
+}
+
+
 /************************* Sobre mi section *************************/
 .about-section {
     display: flex;
@@ -709,96 +746,7 @@ footer{
 
 
 
-/*======================= BrakPoints ============================ */
-/*
-@media(max-width:1200px){
-    html{
-        font-size: 95%;
-    }
-}
 
-@media(max-width:991px){
-    header,section,footer{
-        padding-left: 3%;
-        padding-right: 3%;
-    }
-    .home,.portfolio-box{
-        flex-direction: column-reverse;
-    }
-    .about,.contactSkills{
-        flex-direction: column;
-    }
-    .about .about-img .aboutHero{
-        width: 100%;
-    }
-    .proposal img{
-        width: 52vw;
-    }
-    .portfolio-img img{
-        width: 100%;
-        height: 100%;
-    }
-    .portfolio-gallery{
-        grid-template-columns: repeat(auto-fill,minmax(250px , 1fr));
-    }
-    .img-hero{
-        margin-top: 3rem;
-    }
-}
-
-@media(max-width:768px){
-    .proposal{
-        display: none;
-    }
-    .menu-icon .bar,.menu-icon::after,.menu-icon::before{
-        display: block;
-    }
-    ul.navlist{
-        position: absolute;
-        top: -1000px;
-        transition: all .3s ease;
-        width: 100%;
-        text-align: center;
-        display: block;
-        background: var(--gradient-white-bg);
-        left: 0;
-        border-top: 2px solid rgba(248, 202, 202, .7);
-    }
-    ul.navlist a{
-        font-size: 1.5rem;
-        margin: 1rem 0;
-    }
-    .navlist.active{
-        top: 100%;
-    }
-    .overlay{
-        width: 100vw;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        position: fixed;
-        background: rgba(0,0,0,0.5);
-        z-index: 8;
-        opacity: 0;
-        transform: .3s;
-        pointer-events: none;
-    }
-    body.open .overlay{
-        opacity: 1;
-        pointer-events: auto;
-    }
-    .btn{
-        padding: 10px;
-    }
-    .home{
-        grid-gap: 0;
-    }
-    .fillter-buttons button{
-        padding: 10px;
-        font-size: .8rem;
-    }
-}
-*/
 @media(max-width:530px){
     html{
         font-size: 80%;

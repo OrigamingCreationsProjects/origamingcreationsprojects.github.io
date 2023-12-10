@@ -34,10 +34,13 @@ body{
 
 /* ==================== home section css code ============================ */
 section{
-    padding: 90px 10%;
+    padding: 100px 10%;
+}
+.home {
+    height: 100vh;
 }
 .home-content {
-    padding: 60px 8%; /* Ajusta los valores superior e inferior según sea necesario */
+    padding: 20px; /* Ajusta el espaciado según sea necesario */
 }
 
 .homeSite{
@@ -75,7 +78,7 @@ section{
     font-weight: 700;
     margin-bottom: 1rem;
     color: transparent;
-    -webkit-text-stroke: 0.05w #462121;
+    -webkit-text-stroke: 0.05w #322146;
     background: var(--gradient-color-bg);
     background-repeat: no-repeat;
     -webkit-background-clip: text;
@@ -103,7 +106,7 @@ section{
 
 .hero-info p{
     font-size: 1.9rem;
-    color: #ffb9b9;
+    color: #dab9ff;
     line-height: 1.6rem;
 }
 
@@ -123,6 +126,17 @@ section{
     gap: 8px;
 }
 
+.btn-box .d-CV{
+    background: var(--gradient-white-bg2);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #000;
+    box-shadow: rgba(60,64,67,0.3)0px 1px 2px 0,
+                  rgba(60,64,67,0.15)0px 2px 6px 2px;
+    transition: all .3s ease;              
+}
+
 .social-media{
     display: flex;
     justify-content: center;
@@ -130,7 +144,7 @@ section{
 }
 
 .social-media .bg-icon {
-    margin: 0 5px; /* Ajusta el espacio entre los íconos de redes sociales */
+    margin: 0 10px; /* Ajusta el espacio entre los íconos de redes sociales */
 }
 
 .social-media a{
@@ -184,7 +198,10 @@ section{
     max-height: 350px; /* Ajusta el tamaño vertical según sea necesario */
     border-radius: 50%; /* Hace la imagen redonda */
 }
-
+.col-lg-6 {
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+}
 /* Ajusta el tamaño del contenedor y el espaciado alrededor de la imagexn */
 .col-lg-6.text-right,
 .col-lg-6.align-self-center.text-left {
@@ -202,7 +219,11 @@ section{
     display: block;
     margin: 0 auto;
 }
-
+.img-hero {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
 .img-hero img{
     position: relative;
     max-width: 100px;
@@ -255,7 +276,7 @@ section{
     position: absolute;
     width: 490px;
     height: 490px;
-    background: #fbf2f2;
+    background: #f2f6fb;
     border-radius: 50%;
     box-shadow: 0 1px 6px 5.94px rgba(0,0,0,0.2);
     animation: rotateText 30s linear infinite;
@@ -269,6 +290,83 @@ section{
     left: 50%;
     font-size: 1.2rem;
 }
+
+@media only screen and (max-width: 767px) {
+    .home-content {
+        padding: 20px 0%; /* Ajusta el espaciado según sea necesario */
+    }
+
+    .col-lg-6 {
+        margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+        margin-bottom: 10px; /* Ajusta el margen inferior según sea necesario */
+    }
+
+    .social-media {
+        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en dispositivos móviles */
+        justify-content: center; /* Centrar los elementos en dispositivos móviles */
+    }
+
+    .social-media .bg-icon {
+        margin: 10px; /* Ajusta el espacio entre los íconos de redes sociales según sea necesario */
+    }
+}
+
+/* Agrega ajustes para dispositivos más grandes si es necesario */
+@media only screen and (min-width: 768px) {
+    /* Ajustes adicionales para dispositivos más grandes si es necesario */
+}
+
+
+/************************* Sobre mi section *************************/
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 10%;
+    color: #ffffff;
+    background-color: rgb(121, 35, 35); /* Cambia el color de fondo según tus preferencias */
+    text-align: center;
+}
+  
+  .about-content {
+    max-width: 600px;
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px; /* Agregamos un margen inferior */
+  }
+  
+  .about-content p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .about-image {
+    max-width: 70%;
+    border-radius: 8px;
+    width: auto;
+    height: auto;/
+  
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-content {
+      margin-top: 20px;
+    }
+  }
+
+  @media only screen and (min-width: 769px) {
+    .about-image {
+      max-width: 27%; /* Ajusta el porcentaje según tus preferencias */
+    }
+  }
 
 /* ==================== skills section css code ============================ */
 
