@@ -397,9 +397,6 @@ section{
     transition: transform 0.3s ease-in-out;
 }
 
-
-/* Estilo para la pantalla completa */
-
 .modal {
     display: none;
     position: fixed;

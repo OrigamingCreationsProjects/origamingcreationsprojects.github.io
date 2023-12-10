@@ -81,7 +81,7 @@ body{
     justify-content: space-around;
     padding: 50px 10%;
     color: #ffffff;
-    background-color: rgb(90, 35, 121); 
+    background-color: rgb(88, 68, 99); 
     text-align: center;
 }
   
@@ -148,71 +148,195 @@ body{
 }
 
 /**************************** Seccion de galleria**********************************/
-
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
     padding: 20px;
-}
+  }
 
-.gallery-item {
-    overflow: hidden;
+  .gallery-item {
+    flex: 1 0 200px;
     cursor: pointer;
-    aspect-ratio: 1; /* Asegura que el contenedor tenga una relación de aspecto cuadrada */
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
 
-}
-
-.gallery-item img {
-    width: 100%; /* Para que las imágenes ocupen todo el espacio del contenedor */
-    height: auto; /* Para mantener la proporción de la imagen */
-    display: block; /* Elimina el espacio adicional debajo de las imágenes */
-    transition: transform 0.2s ease-in-out; /* Transición suave al hacer clic */
-}
-
-.gallery-item:hover img {
-    transform: scale(1.1);
-}
-
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    padding-top: 50px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.9);
-}
-
-.modal-content {
-    position: relative;
-    margin: auto;
-    max-width: 800px; /* Ancho máximo del modal */
-}
-
-
-.mySlides img {
+  .gallery-item img {
     width: 100%;
     height: auto;
-}
+    display: block;
+  }
 
-.close {
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  .modal-content {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .close {
     position: absolute;
     top: 10px;
     right: 20px;
     font-size: 30px;
     color: white;
     cursor: pointer;
+  }
+
+  .gallery-item:target {
+    transform: scale(1.2);
+    z-index: 2;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .gallery-item {
+      flex: 1 0 100%;
+    }
+  }
+
+  /* ==================== porfolio section css code ============================ */
+.portfolio-section {
+    padding: 40px;
+    text-align: center;
+    margin-top: 5px;
+    background-color: #332649;
+    /*border-radius: 8px;  Añade esquinas redondeadas según sea necesario */
+}
+.portfolio-section h2 {
+    color: #ffffff;
 }
 
-/* Reglas de medios para pantallas más pequeñas */
-@media only screen and (max-width: 768px) {
-    .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-        padding: 10px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 0;
+    justify-content: center;
+    margin-bottom: -210px; /* Ajusta según sea necesario para eliminar el espacio inferior */
+}
+
+.gallery-item {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+   
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal-content {
+    position: relative;
+    width: 80%;
+    max-width: 80%; 
+    margin: 0 auto; 
+}
+
+.modal-image {
+    width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+
+.modal:target {
+    display: flex;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+}
+
+.modal:target .modal-overlay {
+    display: none;
+}
+.modal-content {
+    position: relative;
+    max-width: 30%; 
+    max-height: 80vh;
+    
+}
+.modal-image {
+    width: 30%; 
+    height: auto;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.close-btn:hover {
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* Agrega esta regla para ocultar .modal-content cuando no está en :target */
+.modal-content {
+    display: none;
+}
+
+/* Muestra .modal-content cuando el elemento padre (.modal) es :target */
+.modal:target .modal-content {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        width: 100%; /* Usa el 100% del ancho disponible en dispositivos móviles */
+        max-width: none; /* Elimina el máximo ancho en dispositivos móviles */
+    }
+
+    .modal-image {
+        max-width: 100%; /* Asegura que la imagen no exceda el ancho de la pantalla en dispositivos móviles */
     }
 }
-  

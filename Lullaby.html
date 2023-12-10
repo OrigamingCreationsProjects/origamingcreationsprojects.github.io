@@ -34,7 +34,8 @@
                         <li class="nav-item"><a class="nav-link"  href="index.html">Origaming Creations</a></li>
                         <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#LullabyPlay">Juega Lullaby</a></li>
-                        
+                        <li class="nav-item"><a class="nav-link" href="#gallery">Galeria</a></li>
+
                         <!--<li class="nav-item"><a class="nav-link" href="#contact">Redes Sociales</a></li>-->
                     </ul>
                 </div>
@@ -70,32 +71,140 @@
       </section>
 
     <!-- Seccion galeria-->
-    <section class="gallery-section">
-        <div class="gallery">
-            <div class="gallery-item" onclick="openModal(); currentSlide(1)">
-                <img src="assets/fotos/Ali.jpeg" alt="Imagen 1">
-            </div>
-            <div class="gallery-item" onclick="openModal(); currentSlide(2)">
-                <img src="assets/fotos/Alex.jpg" alt="Imagen 2">
-            </div>
-            <!-- Agrega más elementos según sea necesario -->
-
-            <div id="myModal" class="modal">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div class="modal-content">
-                    <div class="mySlides">
-                        <img src="assets/fotos/Ali.jpeg" alt="Imagen 1">
+    <section class="portfolio-section" id="gallery">
+        <h2>Galeria</h2>
+         <div class="gallery">
+             <div class="gallery-item">
+                 <a href="#img1">
+                     <img src="assets/porfolioGema/2d.JPG" alt="Proyecto 1">
+                 </a>
+                 <div class="modal" id="img1">
+                     <div class="modal-overlay"></div>
+                     <div class="modal-content">
+                         <a href="#" class="close-btn" onclick="closeModal('img1');">&times;</a>
+                         <img src="assets/porfolioGema/2d.JPG" alt="Proyecto 1" class="modal-image">
+                     </div>
+                 </div>
+             </div>
+             <div class="gallery-item">
+                 <a href="#img2">
+                     <img src="assets/porfolioGema/3d.jpg" alt="Proyecto 2">
+                 </a>
+                 <div class="modal" id="img2">
+                     <div class="modal-overlay"></div>
+                     <div class="modal-content">
+                         <a href="#" class="close-btn" onclick="closeModal('img2');">&times;</a>
+                         <img src="assets/porfolioGema/3d.jpg" alt="Proyecto 2" class="modal-image">
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="gallery-item">
+                 <a href="#img3">
+                     <img src="assets/porfolioGema/fotografia.JPG" alt="Proyecto 3">
+                 </a>
+                 <div class="modal" id="img3">
+                     <div class="modal-overlay"></div>
+                     <div class="modal-content">
+                         <a href="#" class="close-btn" onclick="closeModal('img3');">&times;</a>
+                         <img src="assets/porfolioGema/fotografia.JPG" alt="Proyecto 3" class="modal-image">
+                     </div>
+                 </div>
+ 
+             </div>
+             <div class="gallery-item">
+                 <a href="#img4">
+                     <img src="assets/porfolioGema/ilustracion.JPG" alt="Proyecto 4">
+                 </a>
+                 <div class="modal" id="img4">
+                     <div class="modal-overlay"></div>
+                     <div class="modal-content">
+                         <a href="#" class="close-btn" onclick="closeModal('img4');">&times;</a>
+                         <img src="assets/porfolioGema/ilustracion.JPG" alt="Proyecto 4" class="modal-image">
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="gallery-item">
+                 <a href="#img5">
+                     <img src="assets/porfolioGema/personaje.jpg" alt="Proyecto 5">
+                 </a>
+                 <div class="modal" id="img5">
+                     <div class="modal-overlay"></div>
+                     <div class="modal-content">
+                         <a href="#" class="close-btn" onclick="closeModal('img5');">&times;</a>
+                         <img src="assets/porfolioGema/personaje.jpg" alt="Proyecto 5" class="modal-image">
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="gallery">
+            <div class="gallery-item">
+                <a href="#img1">
+                    <img src="assets/porfolioGema/2d.JPG" alt="Proyecto 1">
+                </a>
+                <div class="modal" id="img1">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <a href="#" class="close-btn" onclick="closeModal('img1');">&times;</a>
+                        <img src="assets/porfolioGema/2d.JPG" alt="Proyecto 1" class="modal-image">
                     </div>
-                    <div class="mySlides">
-                        <img src="assets/fotos/Alex.jpg" alt="Imagen 2">
+                </div>
+            </div>
+            <div class="gallery-item">
+                <a href="#img2">
+                    <img src="assets/porfolioGema/3d.jpg" alt="Proyecto 2">
+                </a>
+                <div class="modal" id="img2">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <a href="#" class="close-btn" onclick="closeModal('img2');">&times;</a>
+                        <img src="assets/porfolioGema/3d.jpg" alt="Proyecto 2" class="modal-image">
                     </div>
-                    <!-- Agrega más elementos según sea necesario -->
+                </div>
+            </div>
 
-                    
+            <div class="gallery-item">
+                <a href="#img3">
+                    <img src="assets/porfolioGema/fotografia.JPG" alt="Proyecto 3">
+                </a>
+                <div class="modal" id="img3">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <a href="#" class="close-btn" onclick="closeModal('img3');">&times;</a>
+                        <img src="assets/porfolioGema/fotografia.JPG" alt="Proyecto 3" class="modal-image">
+                    </div>
+                </div>
+
+            </div>
+            <div class="gallery-item">
+                <a href="#img4">
+                    <img src="assets/porfolioGema/ilustracion.JPG" alt="Proyecto 4">
+                </a>
+                <div class="modal" id="img4">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <a href="#" class="close-btn" onclick="closeModal('img4');">&times;</a>
+                        <img src="assets/porfolioGema/ilustracion.JPG" alt="Proyecto 4" class="modal-image">
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <a href="#img5">
+                    <img src="assets/porfolioGema/personaje.jpg" alt="Proyecto 5">
+                </a>
+                <div class="modal" id="img5">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <a href="#" class="close-btn" onclick="closeModal('img5');">&times;</a>
+                        <img src="assets/porfolioGema/personaje.jpg" alt="Proyecto 5" class="modal-image">
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+     </section>
+    
 
         <!-- Footer-->
         <footer class="bg-light py-5">

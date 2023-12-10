@@ -121,52 +121,22 @@ function closeOverlay() {
 
 var closeButtons = document.querySelectorAll('.close-btn');
 
-        // Agrega un evento de clic a cada botón de cierre
-        closeButtons.forEach(function(button) {
-            button.addEventListener('click', function() {
-                // Obtén el ID del modal a cerrar
-                var modalId = button.parentElement.parentElement.id;
-                closeModal(modalId);
-            });
-        });
+// Agrega un evento de clic a cada botón de cierre
+closeButtons.forEach(function(button) {
+    button.addEventListener('click', function(event) {
+        // Evitar el comportamiento predeterminado del enlace
+        event.preventDefault();
 
-        function closeModal(modalId) {
-            location.hash = '';
-        }
-
+        // Obtener el ID del modal a cerrar
+        var modalId = button.parentElement.parentElement.id;
+        closeModal(modalId);
+    });
 });
 
-/************** Galleria *****************************/
-let slideIndex = 1;
-
-function openModal() {
-    document.getElementById('myModal').style.display = 'block';
+function closeModal(modalId) {
+    // Eliminar el hash y mantener la posición de desplazamiento
+    window.history.replaceState({}, document.title, window.location.href.split('#')[0]);
 }
-
-function closeModal() {
-    document.getElementById('myModal').style.display = 'none';
-}
+});
 
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-    let i;
-    const slides = document.getElementsByClassName('mySlides');
-    
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-    
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-
-    slides[slideIndex - 1].style.display = 'block';
-}
