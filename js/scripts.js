@@ -121,22 +121,16 @@ function closeOverlay() {
 
 var closeButtons = document.querySelectorAll('.close-btn');
 
-// Agrega un evento de clic a cada botón de cierre
 closeButtons.forEach(function(button) {
     button.addEventListener('click', function(event) {
-        // Evitar el comportamiento predeterminado del enlace
-        event.preventDefault();
-
-        // Obtener el ID del modal a cerrar
+        event.preventDefault(); // Evita el comportamiento predeterminado del enlace
         var modalId = button.parentElement.parentElement.id;
         closeModal(modalId);
     });
 });
-
-function closeModal(modalId) {
-    // Eliminar el hash y mantener la posición de desplazamiento
-    window.history.replaceState({}, document.title, window.location.href.split('#')[0]);
-}
+       
 });
 
-
+function closeModal(modalId) {
+    location.hash = '';
+}

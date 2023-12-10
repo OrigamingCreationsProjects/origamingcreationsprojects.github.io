@@ -34,10 +34,10 @@ body{
 
 /* ==================== home section css code ============================ */
 section{
-    padding: 90px 10%;
+    padding: 100px 10%;
 }
 .home-content {
-    padding: 60px 8%; /* Ajusta los valores superior e inferior según sea necesario */
+    padding: 70px 8%; /* Ajusta los valores superior e inferior según sea necesario */
 }
 
 .homeSite{
