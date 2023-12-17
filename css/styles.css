@@ -363,13 +363,13 @@ body {
   background-image: url('Banner.jpeg'); 
   background-size: cover;
   background-repeat: repeat;
-  padding: 40px 0.5%;
+  padding: 60px 0.7%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 70vh;
+  height: 90vh;
 }
 .lanzamiento-section::before {
   content: '';
@@ -422,6 +422,29 @@ body {
 
   .lanzamiento-image {
       max-width: 100%;
+  }
+}
+
+.lanzamiento-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px; 
+  margin-top: 20px; /* Ajusta según sea necesario la separación entre el botón y la cuadrícula */
+}
+
+.lanzamiento-item img {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .lanzamiento-section {
+    height: 140vh;
+    padding: 10px 5%;
+  }
+
+  .lanzamiento-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   }
 }
 
