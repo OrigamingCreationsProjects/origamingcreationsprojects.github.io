@@ -399,7 +399,7 @@ section{
 
 .skill-name {
     margin-top: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 .skill-description {
@@ -604,7 +604,7 @@ section{
   }
   
   input[type="submit"] {
-    background-color: #633597;;
+    background-color: #973582;;
     color: #fff;
     cursor: pointer;
     padding: 10px;
